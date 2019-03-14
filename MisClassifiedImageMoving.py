@@ -60,7 +60,7 @@ def copy_img():
 
     local_img_dir = r'G:\now\all\train'
     # 训练集文件路径，local_img_dir + 原始标签 + 文件名 = 错误分类文件路径
-    CSV_file_path = 'G:\\mis_training\\new2.csv'  # CSV文件路径
+    CSV_file_path = 'G:\\mis_training\\new3.csv'  # CSV文件路径
 
     save_dir = 'G:\\mis_training\\mis\\'  # 错误影像另存的文件夹路径
 
