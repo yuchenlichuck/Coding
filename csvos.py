@@ -1,7 +1,7 @@
 import csv
 import shutil
 import os
-filename = 'trainLabels.csv'
+filename = 'H:\\kaggle\\trainLabels.csv'
 
 arr=[]
 
@@ -40,10 +40,10 @@ with open(filename) as f:
             print(i)
     file_name_list = [row[0] for row in arr]
     label = [row[1] for row in arr] 
-local_img_dir=r'train'
-save_dir=r'data'
+local_img_dir='H:\\kaggle\\train'
+save_dir='H:\\data'
 for i in range(len(file_name_list)):
-    img_file_path = local_img_dir + '/' + file_name_list[i]+'.jpeg'
-    img_save_path = save_dir + '/'+ label[i]
+    img_file_path = local_img_dir + '\\' + file_name_list[i]+'.jpeg'
+    img_save_path = save_dir + '\\'+ label[i]
     mkdir(img_save_path)
-    shutil.copy(img_file_path,img_save_path+ '/' + file_name_list[i]+'.jpeg')
+    shutil.copy(img_file_path,img_save_path+ '\\' + file_name_list[i]+'.jpeg')
